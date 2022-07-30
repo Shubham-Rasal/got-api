@@ -8,7 +8,7 @@ The api code is in index.js file.
 
 ##Direction to replicate:
 
-git clone
+git clone <br>
 npm install
 node index.js
 open index.html in the browser.
