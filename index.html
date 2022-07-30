@@ -20,9 +20,15 @@ async function getData() {
             }
         
         });
-        console.log(data.body);
+        // console.log(data.body);
         const json = await data.json();
-        console.log(json);
+        console.log(json[0].members);
+        const members = json[0].members;
+        members.forEach(member => {
+            console.log(member.name);
+            document.write(member.name + "<br>");
+        });
+        
 }
 getData()
     </script>
